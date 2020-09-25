@@ -1,8 +1,24 @@
-div {
+.title {
+	margin: auto;
+	width: 80%;
+	padding-top: 4%;
+	padding-bottom: 0px;
+}
+
+.turtle {
 	margin: auto;
 	width: 50%;
 	text-align: center;
 	padding: 4rem;
+	padding: 0px;
+}
+
+.construction {
+	position: absolute;
+	margin-left: 80%;
+	padding-right: 5%;
+	width: 20%;
+	text-align: center;
 }
 
 img {
@@ -12,9 +28,9 @@ img {
 }
 
 h1 {
-	margin: auto;
+	width: auto;
 	text-align: center;
-	padding-top: 4rem;
+	padding-top: 2vw;
 	font-family: 'Fredericka the Great', cursive;
-	font-size: 3rem;
+	font-size: 3vw;
 }
