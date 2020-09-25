@@ -5,8 +5,16 @@ div {
 	padding: 4rem;
 }
 
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
 h1 {
 	margin: auto;
 	text-align: center;
 	padding-top: 4rem;
+	font-family: 'Fredericka the Great', cursive;
+	font-size: 3rem;
 }
