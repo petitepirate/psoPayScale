@@ -1,8 +1,29 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+
 .title {
 	margin: auto;
 	width: 80%;
 	padding-top: 4%;
 	padding-bottom: 0px;
+}
+
+.title2 {
+	margin: auto;
+	width: 80%;
+	padding-top: 0.5%;
+	padding-bottom: 0px;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	width: 100%;
+	/* border: 3px solid green; */
+	padding: 10px;
 }
 
 .turtle {
@@ -16,10 +37,19 @@
 .map {
 	display: inline;
 	margin: auto;
-	width: 50%;
+	width: 80%;
 	text-align: center;
 	padding: 0px;
-	border: 3px solid black;
+	/* border: 3px solid black; */
+}
+
+.map2 {
+	display: inline;
+	margin: auto;
+	width: 30%;
+	text-align: left;
+	padding: 10px;
+	/* border: 3px solid black; */
 }
 
 .maptop,
@@ -52,7 +82,44 @@ img .inline {
 h1 {
 	width: auto;
 	text-align: center;
-	padding-top: 2vw;
+	padding-top: 1vw;
 	font-family: 'Fredericka the Great', cursive;
 	font-size: 3vw;
+}
+
+h2 {
+	width: auto;
+	text-align: center;
+	padding-top: 1vw;
+	font-family: 'Fredericka the Great', cursive;
+	font-size: 2vw;
+}
+
+.navbar {
+	background-color: rgb(11, 100, 184);
+	overflow: hidden;
+}
+
+.navbar a {
+	float: left;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.navbar a:hover {
+	background-color: rgb(190, 126, 243);
+	color: rgb(54, 212, 48);
+}
+
+#user_img {
+	width: 300px;
+	height: 200px;
+}
+
+#home {
+	border: 3px solid #fff;
+	padding: 20px;
 }

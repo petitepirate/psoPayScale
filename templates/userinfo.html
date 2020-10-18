@@ -2,9 +2,22 @@
 {% block title %}User's Home{% endblock %}
 
 {% block content %}
-    <h1>User Info</h1>
+<div class="center">
+    <div class="map2">
+        <h2>{{user.first_name}} {{user.last_name}} Details</h2>
+<div id="user_img"><img src="{{user.image_url}}" alt=""></div>
 
+<ul>
+    <li>User First Name : {{user.first_name}}</li>
+    <li>User First Name : {{user.last_name}}</li>
+    <li>User URL : {{user.image_url}}</li>
+</ul>    
 
+<form>
+<button formaction="/users/{{ user.id }}/edit" formmethod="GET">Edit</button>
+<button formaction="/users/{{ user.id }}/delete" formmethod="POST" id="delete">Delete</button></form>
+</div>
+</div>
     
 
 

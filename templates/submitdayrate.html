@@ -3,7 +3,8 @@
 {% block title %}Add a New User{% endblock %}
 
 {% block content %}
-
+<div class="center">
+    <div class="map">
     <form action="/user/info" method="POST">
         <h2>Add Dayrate Info:</h2>
         <input type="text" id="job_title" name="job_title"  placeholder="Job Title">
@@ -14,4 +15,6 @@
         <input type="text" id="contracting_company" name="contracting_company"  placeholder="Contracting Company">
 <button>Submit Job</button>
 </form>
+</div>
+</div>
 {% endblock %}
