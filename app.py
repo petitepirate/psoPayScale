@@ -27,6 +27,10 @@ def homepage():
 def aboutpage():
     return render_template('about.html')
 
+# @app.route("/regions")
+# def aboutpage():
+#     return render_template('regions.html')
+
 @app.route("/user/new", methods=["GET"])
 def users_new_form():
     """Show a form to create a new user"""
