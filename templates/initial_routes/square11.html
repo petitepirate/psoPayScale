@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block title %}Region 11{% endblock %}
+
+{% block content %}
+
+<h2>
+    <a href="/california">California</a> /
+    <a href="/north_atlantic">NE Atlantic (US Coast)</a> /
+    <a href="/greenland">Greenland</a>
+</h2>
+
+<div class="center">
+  <div class="card-deck">
+  
+<div class="card">
+    <h2>California</h2>
+    <div class="card-body">
+<p>Average dayrate of all Job Titles: $ {{cali_avg}}</p>
+ </div>
+  </div>
+
+  <div class="card">
+    <h2>US East Coast (N. Atlantic Ocean)</h2>
+    <div class="card-body">
+<p>Average dayrate of all Job Titles: $ {{natlantic_avg}}</p>
+ </div>
+  </div>
+
+  <div class="card">
+    <h2>Greenland</h2>
+    <div class="card-body">
+
+  <p>Average dayrate of all Job Titles: $ {{greenland_avg}}</p>
+ </div>
+  </div>
+</div> 
+</div>
+  <p class="center">For more specific details of day-rates in individual countries, please click their link above</p>
+
+{% endblock %}

@@ -1,4 +1,4 @@
-## Capstone 1 - Project Proposal
+## PSO PAYSCALE
 
 1. What goal will your website be designed to achieve?  
 

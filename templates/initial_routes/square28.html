@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% block title %}Region 20{% endblock %}
+
+{% block content %}
+
+<h2>
+    <a href="/brazil">Brazil</a> /
+    <a href="/uruguay">Uruguay</a> / 
+    <a href="/anarctica">Anarctica</a> / 
+    <a href="/angola">Angola</a> / 
+    <a href="/namibia">Namibia</a> / 
+    <a href="/south_africa">South Africa</a>
+</h2>
+
+<div class="center">
+  <div class="card-deck">
+<div class="card">
+    <h2>Brazil</h2>
+    <div class="card-body">
+<p>Average dayrate of all Job Titles: $ {{brazil_avg}}</p>
+ </div>
+  </div>
+
+<div class="card">
+    <h2>Uruguay</h2>
+    <div class="card-body">
+<p>Average dayrate of all Job Titles: $ {{uruguay_avg}}</p>
+ </div>
+  </div>
+
+  <div class="card">
+    <h2>Antarctica</h2>
+    <div class="card-body">
+<p>Average dayrate of all Job Titles: $ {{antarctica_avg}}</p>
+ </div>
+  </div>
+</div>
+</div>
+
+  <div class="center">
+    <div class="card-deck">
+  <div class="card">
+    <h2>Angola</h2>
+    <div class="card-body">
+<p>Average dayrate of all Job Titles: $ {{angola_avg}}</p>
+ </div>
+  </div>
+
+  <div class="card">
+    <h2>Namibia</h2>
+    <div class="card-body">
+<p>Average dayrate of all Job Titles: $ {{namibia_avg}}</p>
+ </div>
+  </div>
+
+  <div class="card">
+    <h2>South Africa</h2>
+    <div class="card-body">
+<p>Average dayrate of all Job Titles: $ {{safrica_avg}}</p>
+ </div>
+  </div>
+
+</div> 
+</div>
+  <p class="center">For more specific details of day-rates in individual countries, please click their link above</p>
+
+{% endblock %}

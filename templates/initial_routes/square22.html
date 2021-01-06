@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block title %}Region 22{% endblock %}
+
+{% block content %}
+
+<h2>
+    <a href="/india_srilanka">India & Sri Lanka</a> /
+    <a href="/malaysia">Malaysia</a> / 
+    <a href="/indonesia">Indonesia</a>
+</h2>
+
+<div class="center">
+    <div class="card-deck">
+<div class="card">
+    <h2>India & Sri Lanka</h2>
+    <div class="card-body">
+<p>Average dayrate of all Job Titles: $ {{india_avg}}</p>
+ </div>
+  </div>
+
+  <div class="card">
+    <h2>Malaysia</h2>
+    <div class="card-body">
+<p>Average dayrate of all Job Titles: $ {{malaysia_avg}}</p>
+ </div>
+  </div>
+
+  <div class="card">
+    <h2>Indonesia</h2>
+    <div class="card-body">
+<p>Average dayrate of all Job Titles: $ {{indonesia_avg}}</p>
+ </div>
+  </div>
+
+</div> 
+</div>
+  <p class="center">For more specific details of day-rates in individual countries, please click their link above</p>
+
+{% endblock %}

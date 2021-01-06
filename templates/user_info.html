@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<div class="user">
+<div class="row" id="user-card">
+    <div class="col-sm-4 justify-content-center">
+        <img src="{{ user.image_url }}" alt="Image for {{ user.user_name }}" id="profile-avatar" >
+        <h4 id="sidebar-username">{{ user.first_name }} {{user.last_name}}</h4>
+        <div class="col-sm" >
+            {% if g.user.id == user.id %}
+            <a href="/user/{{ user.id }}/edit" class="btn btn-info ml-2">Edit Profile</a>
+            <a href="/user/{{ user.id }}/addjob" class="btn btn-info ml-2">Add Job</a>
+            <form method="POST" action="/user/delete" class="form-inline">
+              <button class="btn btn-danger ml-2" >Delete Profile</button>
+            </form>
+            {% endif %}
+        </div>
+    </div>
+
+  <div class="col-sm-8">               
+    <h1 style="text-align: left;">{{user.first_name}} {{user.last_name}}</h1>
+    <div><p>To search for dayrate information by location please visit the <a href="/home">home tab</a></p></div>
+    <h4> Jobs: on record: {{ user.jobs | length }}</h4>
+    <ul>
+    {% for job in jobs %}
+    <li>
+        <p><b>Job Title: </b> {{job.job_title}} - {{job.location}} - <b>Day Rate:</b> $ {{job.day_rate}} &nbsp;&nbsp; <a href="/job/{{job.id}}/editjob"> <button class="btn btn-info btn-sm py-0" style="font-size: 0.8em;">Edit</button></a> </p>
+    </li>
+    {% endfor %}
+    </ul>
+    </div>
+</div>
+
+<div class="row">
+
+</div>
+</div>
+{% endblock %}
